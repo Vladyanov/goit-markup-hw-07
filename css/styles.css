@@ -863,7 +863,7 @@ img {
 
   font-size: 18px;
   line-height: 1.56;
-  /* color: var(--color-bg-text-light); */
+  color: var(--color-bg-text-light);
 }
 
 /* ====== /OVERLAY ======== */

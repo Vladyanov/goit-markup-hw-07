@@ -639,17 +639,17 @@ body {
 }
 
 /* ============== BUTTONS КНОПКИ ПОРТФОЛИО =============== */
-.portfolio-buttons {
+.portfolio-buttons-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-buttons .item:not(:last-child) {
+.portfolio-buttons-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-buttons .button {
+.portfolio-buttons-list__button {
   padding: 6px 22px;
   background: var(--section-bg);
   color: var(--secondary-color);
@@ -662,7 +662,7 @@ body {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-buttons .button:hover, .portfolio-buttons .button:focus {
+.portfolio-buttons-list__button:hover, .portfolio-buttons-list__button:focus {
   background: var(--accent-color);
   color: var(--color-text-on-dark);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -675,29 +675,25 @@ body {
   gap: 30px;
 }
 
-.portfolio-box {
-  padding: 20px 24px;
-}
-
-.portfolio-title {
+.portfolio-gallery__title {
   margin-bottom: 4px;
 }
 
-.portfolio-gallery .item {
+.portfolio-gallery__item {
   flex-basis: calc((100% - 60px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-gallery .item:hover {
+.portfolio-gallery__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-box {
+.portfolio-gallery__box {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.portfolio-title {
+.portfolio-gallery__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -706,13 +702,13 @@ body {
   color: var(--secondary-color);
 }
 
-.portfolio-text {
+.portfolio-gallery__text {
   font-size: 16px;
   line-height: 1.88;
 }
 
 /* ====== OVERLAY ======== */
-.thumb {
+.portfolio-gallery__thumb {
   position: relative;
   overflow: hidden;
 }
@@ -727,11 +723,11 @@ body {
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-gallery .item:hover .overlay {
+.portfolio-gallery__item:hover .overlay {
   transform: translateX(0);
 }
 
-.overlay-text {
+.overlay__text {
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;

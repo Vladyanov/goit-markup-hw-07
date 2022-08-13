@@ -1,15 +1,15 @@
 /* ============== BUTTONS КНОПКИ ПОРТФОЛИО =============== */
-.portfolio-buttons {
+.portfolio-buttons-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-buttons .item:not(:last-child) {
+.portfolio-buttons-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-buttons .button {
+.portfolio-buttons-list__button {
   padding: 6px 22px;
 
   background: var(--section-bg);

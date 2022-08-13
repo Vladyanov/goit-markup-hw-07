@@ -1,5 +1,5 @@
 /* ====== OVERLAY ======== */
-.thumb {
+.portfolio-gallery__thumb {
   position: relative;
   overflow: hidden;
 }
@@ -16,12 +16,12 @@
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .portfolio-gallery .item:hover & {
+  .portfolio-gallery__item:hover & {
     transform: translateX(0);
   }
 }
 
-.overlay-text {
+.overlay__text {
   padding: 63px 24px;
 
   font-size: 18px;

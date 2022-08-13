@@ -1,23 +1,13 @@
 /* ========== section WORK чем мы занимаемсяа =========== */
-.section.work {
+.section__work-correct-padding {
   padding-top: 0;
-}
-
-.title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-
-  color: var(--secondary-color);
 }
 
 .work-list {
   display: flex;
 }
 
-.work-list .item {
+.work-list__item {
   position: relative;
 
   &:not(:last-child) {
@@ -25,7 +15,7 @@
   }
 }
 
-.item-title {
+.work-list__title {
   position: absolute;
   bottom: 0;
 

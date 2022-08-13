@@ -2,14 +2,14 @@
   display: flex;
 }
 
-.features .item {
+.features__item {
   flex-basis: calc(100% / 4);
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.features .thumb {
+.features__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
   height: 120px;
 }
 
-.features-title {
+.features__title {
   margin-bottom: 10px;
 
   font-family: var(--primary-font);
@@ -32,6 +32,6 @@
   color: var(--secondary-color);
 }
 
-.features-text {
+.features__text {
   line-height: 1.71;
 }

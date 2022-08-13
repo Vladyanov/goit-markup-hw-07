@@ -3,7 +3,7 @@
   padding: 60px 0;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -13,7 +13,7 @@
   width: 231px;
 }
 
-.footer-logo {
+.footer__logo {
   display: block;
   margin-bottom: 30px;
   margin-right: 0;
@@ -21,7 +21,11 @@
   color: var(--color-text-on-dark);
 }
 
-.text-address {
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-list__text {
   font-style: normal;
 
   color: var(--color-text-on-dark);
@@ -40,7 +44,7 @@
   margin-right: 93px;
 }
 
-.footer-sup-title {
+.footer__text {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -50,15 +54,11 @@
   color: var(--color-text-on-dark);
 }
 
-.address-list .item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-social-networks {
+.footer__social-networks {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-networks .icon {
+.social-networks__icon_light {
   color: var(--color-text-on-dark);
 }
 
@@ -75,7 +75,7 @@
   background-color: transparent;
 }
 
-.input-btn {
+.input-subscribe-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -83,6 +83,6 @@
   @extend %button;
 }
 
-.input-btn > .icon {
+.input-subscribe-btn__icon {
   margin-left: 10px;
 }

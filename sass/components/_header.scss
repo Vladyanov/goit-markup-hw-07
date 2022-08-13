@@ -28,13 +28,13 @@
   line-height: 1.19;
 }
 
-.logo-secondary {
+.logo__secondary {
   color: var(--accent-color);
 }
 
 /* site nav styles */
 
-.menu .item {
+.menu__item {
   position: relative;
 
   &:not(:last-child) {
@@ -42,7 +42,7 @@
   }
 }
 
-.menu .link {
+.menu__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -61,7 +61,7 @@
   }
 }
 
-.menu .active-list {
+.menu__link-active-list {
   color: var(--accent-color);
 
   &::after {
@@ -83,17 +83,15 @@
   margin-left: auto;
 }
 
-.contacts .item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
 }
 
-.contacts-icon {
+.contacts__icon {
   margin-right: 10px;
 }
 
-.contacts .link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding: 10px;

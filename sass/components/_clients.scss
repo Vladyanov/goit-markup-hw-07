@@ -1,8 +1,8 @@
-.clients {
+.clients-list {
   display: flex;
 }
 
-.clients .item {
+.clients-list__item {
   width: 170px;
   height: 92px;
 
@@ -11,7 +11,7 @@
   }
 }
 
-.clients .icon-container {
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
